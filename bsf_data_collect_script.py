@@ -3,6 +3,8 @@ import requests
 import time
 from datetime import date
 import requests
+import schedule
+import time
 
 import csv
 
@@ -114,4 +116,6 @@ def fetch_data():
 
 #CronJob
 
-fetch_data()
+#fetch_data()
+
+schedule.every().hour.at(":25").do(fetch_data)
