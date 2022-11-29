@@ -2,7 +2,7 @@
 FROM python:3.8.3-slim-buster
 
 # 2. Copy files
-COPY . /src
+COPY . /Docker
 
 # 3. Install dependencies
-RUN pip install -r /src/requirements.txt
+RUN pip install -r /Docker/requirements.txt
